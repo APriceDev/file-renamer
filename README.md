@@ -7,9 +7,12 @@ The py file must point to the target directory as the current working directory.
 ```py
 import os
 
-# create path as needed
+# set current working directory (cwd)
 data = os.getcwd() + r'\data'
 os.chdir(data)
+
+# check cwd is correct
+print(os.getcwd())
 
 # list all files in target directory
 for f in os.listdir():
